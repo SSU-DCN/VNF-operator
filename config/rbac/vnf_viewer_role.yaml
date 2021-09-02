@@ -1,0 +1,20 @@
+# permissions for end users to view vnfs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: vnf-viewer-role
+rules:
+- apiGroups:
+  - nfv.dcn.com
+  resources:
+  - vnfs
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - nfv.dcn.com
+  resources:
+  - vnfs/status
+  verbs:
+  - get

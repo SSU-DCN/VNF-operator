@@ -1,0 +1,7 @@
+apiVersion: nfv.dcn.com/v1
+kind: VNF
+metadata:
+  name: vnf-sample
+spec:
+  # Add fields here
+  foo: bar
